@@ -9,9 +9,10 @@ using System.Web.Http;
 
 namespace JWT_Web_Api.Controllers
 {
+    [RoutePrefix("jwtdemo")]
     public class LoginController : ApiController
     {
-
+        [Route("Login")]
         [HttpPost]
         public HttpResponseMessage Login(Usuario user)
         {
@@ -32,6 +33,7 @@ namespace JWT_Web_Api.Controllers
                  TokenManager.GenerateToken(user.Username,user.IpRequest));
         }
 
+        [Route("ValidaToken")]
         [HttpGet]
         public HttpResponseMessage Validate(string token, string username)
         {

@@ -1,0 +1,27 @@
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\JWT Web Api.dll.config
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\JWT Web Api.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\JWT Web Api.pdb
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Newtonsoft.Json.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.Net.Http.Formatting.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.Web.Http.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.Web.Http.WebHost.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\Newtonsoft.Json.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.Net.Http.Formatting.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.Web.Http.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\System.Web.Http.WebHost.xml
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\es\System.Net.Http.Formatting.resources.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\es\System.Web.Http.resources.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\bin\es\System.Web.Http.WebHost.resources.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\obj\Debug\JWT Web Api.csprojResolveAssemblyReference.cache
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\obj\Debug\JWT Web Api.csproj.CoreCompileInputs.cache
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\obj\Debug\JWT Web Api.csproj.CopyComplete
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\obj\Debug\JWT Web Api.dll
+C:\Users\Anorak\Desktop\JWT-Web-Api\JWT Web Api\obj\Debug\JWT Web Api.pdb
