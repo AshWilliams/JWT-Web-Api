@@ -12,11 +12,12 @@ namespace JWT_Web_Api.Controllers
     [RoutePrefix("jwtdemo")]
     public class LoginController : ApiController
     {
-        [Route("Login")]
+        
         [HttpPost]
+        [Route("login")]
         public HttpResponseMessage Login(Usuario user)
         {
-            //http://localhost:62632/api/Login
+            //http://localhost:62632/jwtdemo/login
             //Post-Raw-Json
             //{
             //  Username: "admin",
@@ -33,16 +34,18 @@ namespace JWT_Web_Api.Controllers
                  TokenManager.GenerateToken(user.Username,user.IpRequest));
         }
 
-        [Route("ValidaToken")]
+        
         [HttpGet]
-        public HttpResponseMessage Validate(string token, string username)
+        [Route("validartoken")]
+        public HttpResponseMessage ValidateToken(string token, string username)
         {
+            //http://localhost:62632/jwtdemo/validartoken
             bool exists = new UserRepository().GetUser(username) != null;
             if (!exists) return Request.CreateResponse(HttpStatusCode.NotFound,
                  "The user was not found.");
             string tokenUsername = TokenManager.ValidateToken(token);
             if (username.Equals(tokenUsername))
-                return Request.CreateResponse(HttpStatusCode.OK);
+                return Request.CreateResponse(HttpStatusCode.OK,"Token válido para usuario "+ tokenUsername);
             return Request.CreateResponse(HttpStatusCode.BadRequest);
         }
 
