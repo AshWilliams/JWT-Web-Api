@@ -36,19 +36,39 @@ namespace JWT_Web_Api.Controllers
 
         
         [HttpGet]
-        [Route("validartoken")]
-        public HttpResponseMessage ValidateToken(string token, string username)
+        [Route("validarheader")]
+        public HttpResponseMessage ValidateHeader()
         {
-            //http://localhost:62632/jwtdemo/validartoken
+            //http://localhost:62632/jwtdemo/validarheader
+            var headers = Request.Headers;
+            var tokenBearer =  headers.GetValues("tokenBearer").First();
+            var username = headers.GetValues("username").First();
+
             bool exists = new UserRepository().GetUser(username) != null;
             if (!exists) return Request.CreateResponse(HttpStatusCode.NotFound,
                  "The user was not found.");
-            string tokenUsername = TokenManager.ValidateToken(token);
+            string tokenUsername = TokenManager.ValidateToken(tokenBearer);
             if (username.Equals(tokenUsername))
                 return Request.CreateResponse(HttpStatusCode.OK,"Token válido para usuario "+ tokenUsername);
             return Request.CreateResponse(HttpStatusCode.BadRequest);
         }
 
+        [HttpGet]
+        [Route("validartoken")]
+        public HttpResponseMessage ValidateToken(string token, string username)
+        {
+            //http://localhost:62632/jwtdemo/validartoken
+            //var headers = Request.Headers;
+            //var authToken =  headers.GetValues("tokenBearer").First();
+
+            bool exists = new UserRepository().GetUser(username) != null;
+            if (!exists) return Request.CreateResponse(HttpStatusCode.NotFound,
+                 "The user was not found.");
+            string tokenUsername = TokenManager.ValidateToken(token);
+            if (username.Equals(tokenUsername))
+                return Request.CreateResponse(HttpStatusCode.OK, "Token válido para usuario " + tokenUsername);
+            return Request.CreateResponse(HttpStatusCode.BadRequest);
+        }
 
     }
 }
